@@ -1,0 +1,106 @@
+// VS Code 设置
+{
+  // 一个制表符等于的空格数。该设置在 "editor.detectIndentation" 启用时根据文件内容可能会被覆盖。
+  "editor.tabSize": 2,
+
+  // 调整窗口的缩放级别。原始大小是 0，每次递增(例如 1)或递减(例如 -1)表示放大或缩小 20%。也可以输入小数以便以更精细的粒度调整缩放级别。
+  "window.zoomLevel": -1,
+
+  // 启用后，将在保存文件时剪裁尾随空格。
+  "files.trimTrailingWhitespace": true,
+  "[markdown]": {
+    "files.trimTrailingWhitespace": false
+  },
+
+  // 是否自动检测存储库
+  "git.autoRepositoryDetection": false,
+
+  // Specifies which messages should be suppressed
+  "gitlens.advanced.messages": {
+    "suppressShowKeyBindingsNotice": true
+  },
+  "gitlens.historyExplorer.enabled": true,
+  "gitlens.gitExplorer.files.layout": "list",
+
+  // 在一定数量的等宽字符后显示垂直标尺。输入多个值，显示多个标尺。若数组为空，则不绘制标尺。
+  "editor.rulers": [80, 100],
+
+  // 控制在差异编辑器中是否把前导空格或尾随空格的改动显示为差异
+  "diffEditor.ignoreTrimWhitespace": false,
+
+  // 启用后，保存文件时将删除在最终新行后的所有新行。
+  "files.trimFinalNewlines": true,
+
+  // 启用后，保存文件时在文件末尾插入一个最终新行。
+  "files.insertFinalNewline": true,
+
+  // 控制对选中文本还是编辑器中的整个文件执行查找操作。
+  "editor.find.autoFindInSelection": true,
+
+  // 缩进 <head> 和 <body> 部分。
+  "html.format.indentInnerHtml": true,
+
+  // 以新行结束。
+  "html.format.endWithNewline": true,
+
+  // 控制除了 `Tab` 键以外， `Enter` 键是否同样可以接受建议。这能减少“插入新行”和“接受建议”命令之间的歧义。
+  //  - on
+  //  - smart: 仅当建议包含文本改动时才可使用 `Enter` 键进行接受。
+  //  - off
+  "editor.acceptSuggestionOnEnter": "off",
+
+  // 控制是否自动隐藏小地图滑块。
+  "editor.minimap.showSlider": "always",
+
+  // Controls whether the editor will scroll using an animation.
+  "editor.smoothScrolling": true,
+
+  // Whether to add a semicolon at the end of every line
+  "prettier.semi": false,
+
+  // Controls the printing of trailing commas wherever possible.
+  //  Valid options:
+  //     'none' - No trailing commas
+  //     'es5' - Trailing commas where valid in ES5 (objects, arrays, etc)
+  //     'all' - Trailing commas wherever possible (function arguments)
+  "prettier.trailingComma": "es5",
+
+  // If true, will use single instead of double quotes
+  "prettier.singleQuote": true,
+
+  // Fit code within this line limit
+  "prettier.printWidth": 100,
+
+  "alignment.chars": {
+    "from": {
+      "spaceBefore": 1,
+      "spaceAfter": 1
+    }
+  },
+
+  // Specify how many spaces to insert around the operator.
+  "alignment.surroundSpace": {
+    "colon":      [-1, 1],
+    "assignment": [1, 1],
+    "arrow":      [1, 1],
+    "comment":    2,
+  },
+
+  // Enable/disable `experimentalDecorators` for JavaScript files that are not part of a project. Existing jsconfig.json or tsconfig.json files override this setting. Requires using TypeScript 2.3.1 or newer in the workspace.
+  "javascript.implicitProjectConfig.experimentalDecorators": true,
+
+  // An array with color (hex, rgba, rgb) strings which are used as colors, can be any length.
+  "indentRainbow.colors": [
+    "rgba(64,64,16,0.3)",
+    "rgba(32,64,32,0.3)",
+    "rgba(64,32,64,0.3)",
+    "rgba(16,48,48,0.3)",
+    "rgba(128,32,32,0.3)"
+  ],
+
+  // Controls the font family.
+  "editor.fontFamily": "Source Code Pro, Menlo, Monaco, 'Courier New', monospace",
+
+  // Turns auto fix on save on or off.
+  "eslint.autoFixOnSave": true,
+}
