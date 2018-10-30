@@ -106,6 +106,8 @@ alias gbdd='git branch -D'
 alias ggg='ggg'
 alias ipp='~/get_ip.sh'
 alias blog='ng build --prod --base-href "https://cygra.github.io/blog/"; ngh --dir dist/blog'
+alias gcdd='git checkout dev'
+
 
 function ggg() {
   git add .
