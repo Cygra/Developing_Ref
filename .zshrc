@@ -105,9 +105,17 @@ alias gpf='git push -f'
 alias gbdd='git branch -D'
 alias ggg='ggg'
 alias ipp='~/get_ip.sh'
-alias blog='ng build --prod --base-href "https://cygra.github.io/blog/"; ngh --dir dist/blog'
-alias gcdd='git checkout dev'
 
+# 使用 https://github.com/angular-schule/angular-cli-ghpages 部署 Angular 项目到 gh-pages 
+alias blog='ng build --prod --base-href "https://cygra.github.io/blog/"; ngh --dir dist/blog' 
+
+alias gcdd='git checkout dev' 
+
+# 当前分支名称
+alias gbb="git branch | grep \* | cut -d ' ' -f2" 
+
+# 查看与 dev 分支的 diff 并导出到 diffWithDev.diff
+alias gdif="git diff $(git branch | grep \* | cut -d ' ' -f2) dev >> diffWithDev.diff" 
 
 function ggg() {
   git add .
