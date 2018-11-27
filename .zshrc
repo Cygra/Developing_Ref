@@ -115,7 +115,7 @@ alias gcdd='git checkout dev'
 alias gbb="git branch | grep \* | cut -d ' ' -f2" 
 
 # 查看与 dev 分支的 diff 并导出到 diffWithDev.diff
-alias gdif="git diff $(git branch | grep \* | cut -d ' ' -f2) dev >> diffWithDev.diff" 
+alias gdif="git diff dev $(git branch | grep \* | cut -d ' ' -f2) >> diffWithDev.diff" 
 
 function ggg() {
   git add .
