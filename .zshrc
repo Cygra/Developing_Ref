@@ -107,7 +107,7 @@ alias ggg='ggg'
 alias ipp='~/get_ip.sh'
 
 # 使用 https://github.com/angular-schule/angular-cli-ghpages 部署 Angular 项目到 gh-pages 
-alias blog='ng build --prod --base-href "https://cygra.github.io/blog/"; ngh --dir dist/blog' 
+alias blog='ng build --prod --base-href "https://cygra.wang/"; ngh --dir dist/blog' 
 
 alias gcdd='git checkout dev' 
 
