@@ -6,7 +6,7 @@ commit=$1
 msg=$( curl 'https://api.gushi.ci/all.json' | jq '.content' )
 git add .
 git commit -m "
-${msg}
+${msg//\"/}
 
 ${commit}
 "
