@@ -1,0 +1,9 @@
+alias ios='react-native run-ios --simulator="iPhone X"'
+alias rnst='react-native start'
+alias iosd='open "rndebugger://set-debugger-loc?host=localhost&port=8081"'
+alias gcdd='git checkout dev'
+alias ipp="ifconfig | grep -E '([0-9]{1,3}\.){3}[0-9]{1,3}' | grep -v 127.0.0.1 | awk '{ print $2 }' | cut -f2 -d:"
+alias gbb="git branch | grep \* | cut -d ' ' -f2"
+alias gdif="git diff dev $(git branch | grep \* | cut -d ' ' -f2) >> diffWithDev.diff"
+alias gmnf='git merge --no-ff'
+alias ggc='f(){ gco $(git branch | grep $1) }; f'
